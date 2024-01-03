@@ -1,0 +1,18 @@
+
+        body {
+            background-color: whitesmoke;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+.nav{
+    background-color:rgb(109, 157, 235);
+}
+.off{
+    background-color:rgb(109, 157, 235);
+}   
+.aluno{
+     border-bottom: 1px solid green;
+     padding: 12px;
+     text-align: center;
+     color: white;
+}

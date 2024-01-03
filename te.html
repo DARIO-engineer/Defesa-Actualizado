@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimir Dados do Usuário</title>
+    <style>
+        /* Adicione estilos específicos para impressão */
+        @media print {
+            body * {
+                display: none;
+            }
+            #dadosImprimir {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<form id="meuFormulario">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    <br>
+    <label for="idade">Idade:</label>
+    <input type="text" id="idade" name="idade">
+    <br>
+    <label for="telefone">Nº de Telefone:</label>
+    <input type="text" id="telefone" name="telefone">
+    <br>
+    <button type="button" onclick="exibirDados()">Exibir Dados</button>
+</form>
+
+<div id="dadosImprimir" style="display: none;">
+    <h2>Dados do Usuário</h2>
+    <p id="dadosNome"></p>
+    <p id="dadosIdade"></p>
+    <p id="dadosTelefone"></p>
+    <button id="btnImprimir" onclick="imprimirDados()">Imprimir Dados</button>
+</div>
+
+<script>
+    function exibirDados() {
+        // Obter dados do formulário
+        var nome = document.getElementById('nome').value;
+        var idade = document.getElementById('idade').value;
+        var telefone = document.getElementById('telefone').value;
+
+        // Exibir dados na seção de impressão
+        document.getElementById('dadosNome').innerText = 'Nome: ' + nome;
+        document.getElementById('dadosIdade').innerText = 'Idade: ' + idade;
+        document.getElementById('dadosTelefone').innerText = 'Nº de Telefone: ' + telefone;
+
+        // Ocultar formulário
+        document.getElementById('meuFormulario').style.display = 'none';
+
+        // Exibir seção de impressão
+        document.getElementById('dadosImprimir').style.display = 'block';
+    }
+
+    function imprimirDados() {
+        // Chamar a função de impressão do navegador
+        window.print();
+    }
+    </script>
+</body>
+</html>

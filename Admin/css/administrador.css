@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(236, 233, 233);
+  }
+  .navbar {
+    flex: 0 0 250px; /* Largura do menu */
+    background-color: whitesmoke;
+  }
+  .header{
+    background-color: whitesmoke;
+  }
+
+  .offcanvas {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Posição inicial fora da tela */
+    height: 100%;
+    background-color:rgb(109, 157, 235); /* Cor de fundo do menu */
+    padding-top: 56px; /* Altura da barra de navegação */
+    transition: left 0.3s ease;
+    z-index: 1031; /* z-index maior que o da barra de navegação */
+  }
+
+  .offcanvas.show {
+    left: 0;
+  }
+
+  .offcanvas-header,
+  .offcanvas-body {
+    padding: 10px;
+  }
+
+  /* .main-content {
+    flex: 1;
+    padding: 20px;
+    transition: margin-left 0.3s ease; /* Adicionado 
+  } */
+
+  .nav-link1 {
+  display: block;
+  padding: 20% 0px;
+}

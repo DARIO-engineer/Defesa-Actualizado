@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar PDF com html2pdf</title>
+    <!-- Adicione a referência à biblioteca html2pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.0/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+<form id="meuFormulario">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome">
+    <br>
+    <label for="idade">Idade:</label>
+    <input type="text" id="idade" name="idade">
+    <br>
+    <label for="telefone">Nº de Telefone:</label>
+    <input type="text" id="telefone" name="telefone">
+    <br>
+    <button type="button" onclick="exibirDados()">Exibir Dados</button>
+</form>
+
+<div id="dadosImprimir" style="display: none;">
+    <h2>Dados do Usuário</h2>
+    <p id="dadosNome"></p>
+    <p id="dadosIdade"></p>
+    <p id="dadosTelefone"></p>
+    <button id="btnImprimir" onclick="gerarPDF()">Gerar PDF</button>
+</div>
+
+<script>
+    function exibirDados() {
+        var nome = document.getElementById('nome').value;
+        var idade = document.getElementById('idade').value;
+        var telefone = document.getElementById('telefone').value;
+
+        document.getElementById('dadosNome').innerText = 'Nome: ' + nome;
+        document.getElementById('dadosIdade').innerText = 'Idade: ' + idade;
+        document.getElementById('dadosTelefone').innerText = 'Nº de Telefone: ' + telefone;
+
+        document.getElementById('dadosImprimir').style.display = 'block';
+    }
+
+    function gerarPDF() {
+        var elemento = document.getElementById('dadosImprimir');
+
+        // Use html2pdf para gerar o PDF
+        html2pdf(elemento);
+    }
+</script>
+
+</body>
+</html>

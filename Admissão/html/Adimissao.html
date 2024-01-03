@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Páginas inicial</title>
+<link href="/Imagem/logo-Impar.png" rel="icon" type="image/png" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="/Admissão/css/admissao1.css">
+</head>
+<body>
+
+<!-- Aqui vem o meu menu, o cabeçalho -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top nav-underline" id="barra_navbar">
+
+    <div class="container">
+     <img width="10%" height="5%"  src="/Imagem/Loo-removebg-preview (1).png" alt="">
+    <button class="navbar-toggler bg-white m" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-center nav-fill" id="navbarNav">
+    <ul class="navbar-nav ">
+    <li class="nav-item">
+    <a id="Home" class="nav-link link-dark" href="/Página-inicial/html/Página inicial.html">HOME</a>
+    </li>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link link-dark" href="/Actividades/html/noticia.html">NOTÍCIAS</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link link-dark" href="/Galeria/html/Galeria.html">GALERIA</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-dark" href="/Sobre-impar/html/sobre-impar.html">SOBRE O IMPAR</a>
+      </li>
+    <li class="nav-item dropdown ">
+        <a class="nav-link link-dark dropdown-toggle" data-bs-toggle="dropdown" href="">CURSOS</a>
+        <ul class="dropdown-menu">
+        <li><a href="/Sobre-impar/html/enfernagem.html" class="dropdown-item link-dark">ENFERMAGEM</a></li>
+        <li><a href="/Sobre-impar/html/sanalise_clinica.html" class="dropdown-item link-dark">ANÁLISES CLÍNICAS</a></li>
+        <li><a href="/Sobre-impar/html/farmancia.html" class="dropdown-item link-dark">FARMÁNCIA</a></li>
+        <li><a href="/Sobre-impar/html/informatica.html" class="dropdown-item link-dark">INFORMÁTICA</a></li>
+        <li><a href="/Sobre-impar/html/electricidade.html" class="dropdown-item link-dark">ELETRICIDADE</a></li>
+        </ul>
+        </li>
+    <li class="nav-item active">
+    <a href="/Admissão/html/Adimissao.html"><button type="submit" class="btn btn-primary btn-adm"> ADIMISSÃO</button></a>
+    </li>
+    
+    
+    <li class="nav-item">
+    
+    <div class=" d-flex mx-lg-4 ms-lg-4"> 
+    <label for="portal"><img src="/Imagem/conectese.png" id="coneta"></label>
+    <a class="nav-link link-dark d-flex align-items-center" href="/LOgin/html/login_aluno.html" target="_blank"> PORTAL<span>&nbsp;IMPAR</a></span></div>
+    </li>
+    </ul>
+    </div>
+    
+    
+    </div>
+    </div>
+    </nav>
+
+<div class="container p-3 inviseble "></div>
+<div class="p-5"></div>
+
+<div class="container text-center">
+<h2>Atenção!!!</h2>
+<p id="www">O peenchimento do formulário de inscrição deve ser bem feito preenchendo as zonas de maior relevo,
+a apresentação de documentos falsos ou erros no preenchimento vão levar ao cancelamento da sua inscrição ,
+preencha , mas com calma e <i style="font-family: Arial;text-decoration: dashed;text-emphasis: none;">_Boa Sorte!!!</i>
+</p>
+</div>
+
+
+
+<div class="container">
+    <div class="container">
+     <div class="container">
+    </div>
+ <div class="container">
+    <div class="row justify-content-center  row-cols-1  row-cols-sm-1  row-cols-md-2 ">
+    <div class="col">
+    <h3 class=" da-bio">Dados Biográfricos</h3>
+    </div>
+    <div class="col">
+    <h3 class="da-acad">Dados Académicos</h3>
+    </div>
+    </div></div>
+    </div>
+ <!-- autocomplete="off" Depois devemos colocar o autocoplete off para evitar com que o usuariao repita os dados -->
+<form action="" class="needs-validation" id="formularioAdmissao" novalidate  onsubmit="return validateDate()" >
+<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+
+<div class="col mt-3">  
+<label for="Pnome">Primeiro Nome:</label>
+<input type="text" class="form-control" id="Pnome" placeholder="Primeiro Nome" required="required"
+ pattern="[A-Z][a-záãâàéèíìóòõúç]{2,}">
+
+<!-- pattern="[A-Z][a-zãáàâéèíìóòõúùç]+\s[A-Za-zãáàâéèíìóòõúùç]{2,}$ -->
+<div class="valid-feedback">
+    Bom!
+</div>
+<div class="invalid-feedback">
+    Formato: Inicial Maiúscula, o resto minúscula.<br>
+    No mínimo 3 caracteres, e sem espaços entre eles
+</div>
+</div>
+<div class="col mt-3">
+<label for="Unome">Último Nome:</label>
+<input type="text" class="form-control" id="Unome" placeholder="Último Nome" required="required" pattern="[A-Z][a-záãâàéèíìóòõúç]{2,}">
+<div class="valid-feedback">
+    Bom!
+</div>
+<div class="invalid-feedback">
+    Formato: Inicial Maiúscula, o resto minúscula.<br>
+    No mínimo 3 caracteres, e sem espaços entre eles
+</div>
+</div>
+<div class="col mt-3">
+    <label for="dob">Data de Nascimento:</label>
+    <input type="date" class="form-control" id="data" name="data" min="1900-01-01" max="2009-12-31" required>
+    <div class="valid-feedback">
+        Bom!
+    </div>
+    <div class="invalid-feedback">
+        Formato: Deves ter no mínimo 14 anos.<br>
+    </div>
+</div>
+<div class="col mt-3">
+<label for="nomeP">Nome Completo do Pai:</label>
+<input type="text" class="form-control" id="nomeP" placeholder="Nome do pai" required="required" pattern="[A-Z]+[a-zãáàâéèíìóòõúùç]+\s[A-Z]+[a-zãáàâéèíìóòõúùç]{2,}$">
+<div class="valid-feedback">
+    Bom!
+</div>
+<div class="invalid-feedback">
+    Formato: Inicial e após espaços  Maiúscula, o resto minúscula.<br>
+   Exemplo: João Milguel
+</div>
+</div>
+<div class="col mt-3">
+<label for="nomeM">Nome Completo da Mãe:</label>
+<input type="text" class="form-control" id="nomeM" placeholder="Nome da mãe" required="required"  pattern="[A-Z]+[a-zãáàâéèíìóòõúùç]+\s[A-Z]+[a-zãáàâéèíìóòõúùç]{2,}$">
+<div class="valid-feedback">
+    Bom!
+</div>
+<div class="invalid-feedback">
+    Formato: Inicial e após espaços  Maiúscula, o resto minúscula.<br>
+   Exemplo: Ana Sebastião
+</div>
+</div>
+<div class="col mt-3">
+<label for="curso">Sexo:</label>
+<select class="form-control" id="sexo" required>
+<option value="1">Femenino</option>
+<option value="2">Masculino</option>
+</select>
+</div>
+<div class="col mt-4">
+    <label for="NBI">Nº do BI:</label>
+    <div class="input-group mt-0">
+        <span class="input-group-text">BI</span>
+        <input type="text" class="form-control" id="NBI" required placeholder="Bilhete de identidade" pattern="[0-9]{9}[A-Za-z]{2}[0-9]{3}">
+        <div class="valid-feedback">
+            Bom!
+        </div>
+        <div class="invalid-feedback">
+            Formato: Coloque correctamento o seu nº do BI.<br>
+           Exemplo: 000000000LA222
+        </div>
+    </div>
+</div>
+<div class="col mt-4">
+<label for="NTel1">Nº telefone:</label>
+<div class="input-group">
+    <span class="input-group-text">+244</span>
+    <input type="tel" class="form-control"  id="NTel1" required placeholder="Número de telefone" maxlength="9" pattern="[0-9]{9}" >
+    <div class="valid-feedback">
+        Bom!
+    </div>
+    <div class="invalid-feedback">
+        Formato: Coloque correctamento o seu nº de telefone.<br>
+       Exemplo: 999999999
+    </div>
+</div>
+</div>
+<div class="col mt-4">
+<label for="NTel2">Nº telefone do Encarregado:</label>
+<div class="input-group">
+<span class="input-group-text">+244</span>
+<input type="tel" class="form-control"  id="NTel2" required placeholder="Número de telefone" maxlength="9" pattern="[0-9]{9}">
+<div class="valid-feedback">
+    Bom!
+</div>
+<div class="invalid-feedback">
+    Formato: Coloque correctamento o seu nº de telefone.<br>
+   Exemplo: 999999999
+</div>
+</div>
+</div>
+<div class="col mt-3">
+<label for="provincia">Naturalidade:</label>
+<input type="text" class="form-control" list="provincia" placeholder="Digite para buscar provincia..." value="Luanda">
+<datalist id="provincia" >
+    <option value="Bengo"></option>
+    <option value="Benguela"></option>
+    <option value="Bié"></option>
+    <option value="Cabinda"></option>
+    <option value="Cuando Cubango"></option>
+    <option value="Cuanza Norte"></option>
+    <option value="Cuanza Sul "></option>
+    <option value="Cunene"></option>
+    <option value="Huambo"></option>
+    <option value="Huíla"></option>
+    <option value="Luanda"></option>
+    <option value="Lunda Norte"></option>
+    <option value="Lunda Sul"></option>
+    <option value="Malanje"></option>
+    <option value="Moxico"></option>
+    <option value="Namibe"></option>
+    <option value="Uíge"></option>
+    <option value="Zaire"></option>
+</datalist>
+</div>
+<div class="col mt-3">
+<label for="municipio">Município que resides:</label>
+<input type="text" class="form-control" list="municipio" placeholder="Digite para buscar Município..." value="Viana">
+<datalist id="municipio" is-valid>
+<option value="Cazenga"></option>
+<option value="Cacuaco"></option>
+<option value="Viana"></option>
+<option value="Outros"></option>
+</div>
+<div class="col mt-3">
+    <label for="email">Seu email:</label>
+    <div class="input-group">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" id="email"  placeholder="Seu E-mail" required="required"  
+        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{3,}$">
+        <div class="valid-feedback">
+            Bom!
+        </div>
+        <div class="invalid-feedback">
+            Formato: Coloque correctamento o seu E-mail.<br>
+           Exemplo:esmadriano2023@gmail.com
+        </div>
+    </div>
+    </div>
+
+<div class="container mt-5 ">
+    <div class="row justify-content-center">
+    <div class="col"></div>
+    <div class="col"><button class="btn disabled">Anterior</button></div>
+        <div class="col">
+   <button type="submit" class="btn btn-primary mx-auto" onclick="proximo()">Próximo</button>
+    </div>
+    <div class="col"></div>
+</div>
+
+</div>
+</div>
+</form>
+</div>
+</div>
+
+<div class="p-2"></div>
+<!-- ################################################### -->
+<!-- Aqui vem o rodapé -->
+<hr>
+<fooder>
+    <div class="container-fluid" style="background-color:rgb(109, 157, 235); ">
+    <footer class="footer-area section-gap align-items-center">
+    
+    <div class="row justify-content-around">
+    <div class="col-lg-2 col-md-4 col-sm-4 mt-2">
+    <div class="single-footer-widget">
+    <h5 class="text-white footer-texto-principal" style="border-bottom: 3px solid white;">Sobre Nós</h5>
+    Rua Santo Antonio,Km 12B, Viana... <br>
+    (+244) 922657508 | 998128383 </br>
+    <a href="mailto:imparcaciasrubras@gmail.com">imparcaciasrubras@gmail.com</a>
+    </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-4 social-widget mt-2">
+    <div class="single-footer-widget">
+    <h5 class="text-white footer-texto-principal" style="border-bottom: 3px solid white;"> links Úteis</h5>
+    <div class="">
+    <div class="col"><a href="/Actividades/html/noticia.html" class="nav-link">NOTÍCIAS</a></div>
+    <div class="col"><a href="/Galeria/html/Galeria.html" class="nav-link">GALERIA</a></div>
+    <div class="col"><a href="/Sobre-impar/html/sobre-curso.html" class="nav-link">SOBRE CURSOS</a></div>
+    <div class="col"><a href="/Sobre-impar/html/sobre-impar.html" class="nav-link">SOBRE O IMPAR</a></div>
+    <div class="col"><a href="/Actividades/html/actividades.html" class="nav-link">ACTIVIDADES</a></div>
+    
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-lg-2 col-md-4 col-sm-4 social-widget mt-2">
+    <div class="single-footer-widget">
+    <h5 style="color: white;border-bottom: 3px solid white;"class="footer-texto-principal"> Cursos ministrados</h5>
+    <div class="">
+    <div class="col"><a href="/Sobre-impar/html/enfernagem.html" class="nav-link">ENFERMAGEM</a></div>
+    <div class="col"><a href="/Sobre-impar/html/analise_clinica.html" class="nav-link">ANÁLISES CLÍNICAS</a></div>
+    <div class="col"><a href="/Sobre-impar/html/farmancia.html" class="nav-link">FARMÁNCIA</a></div>
+    <div class="col"><a href="/Sobre-impar/html/informatica.html" class="nav-link">INFORMÁTICA</a></div>
+    <div class="col"><a href="/Sobre-impar/html/electricidade.html" class="nav-link">ELETRICIDADE</a></div>
+    
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-lg-2 col-md-4 col-sm-3 social-widget mt-2">
+    <div class="single-footer-widget">
+    <h5 style="color: white;border-bottom: 3px solid white;" class="footer-texto-principal">Redes Sociais</h5>
+    <div class="">
+    <a href="#"><img src="/Página-inicial/Imagem/facebook.png" alt="" width="50px" height="50px"></a> 
+    <a href="#"><img src="/Página-inicial/Imagem/whatapp.png" alt="" width="50px" height="50px"></a>
+    <a href="#"><img src="/Página-inicial/Imagem/Instragram.png" alt="" width="50px" height="50px"></a>
+    <a href="#"></a>
+    </div>
+    </div>
+    </div>  
+    </div>
+    <div class="row d-flex justify-content-center align-items-center footer-direito">
+    <p class="footer-text text-center">
+    <b>
+    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; font-size: 15px; color: white;">   Copyright &copy; Todos os direitos reservado ao, IMPAR | <script>document.write(new Date().getFullYear());</script></h1>
+    </b>
+    </p>
+    </div>
+    </div>
+    </footer>
+    </div>
+    </fooder>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        
+        (function () {
+        'use strict'
+        
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+        
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+        }, false)
+        })
+        })()
+        function proximo() {
+        var formulario = document.getElementById('formularioAdmissao');
+        
+        if (formulario.checkValidity()) {
+        // Redirecionar para a próxima página após a validação do formulário
+        window.location.href = "admissao2.html";
+        } else {
+        formulario.classList.add('was-validated');
+        }
+        }
+        </script>
+        
+
+<script src="adimissao.js"></script> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+

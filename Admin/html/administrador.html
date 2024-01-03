@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="/Admin/css/administrador.css">
+  <title>Hello, world!</title>
+</head>
+
+<body>
+      <!-- Nav -->
+    <div class="container-fluid">
+      <div class="nav-content justify-content-center d-none d-lg-block">
+      <!-- Primeira Linha -->
+      <div class="row header">
+        <!--Coluna 1  -->
+        <div class="col-1">
+        <nav class="navbar">
+        <div class="container-fluid">
+        <button class="navbar-toggler my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" id="button">
+        <span class=""><img src="/Icons/menu.png" alt=""></span>
+        </button>
+        </div>
+        </nav>
+        </div>
+        <!-- Coluna 2 -->
+        <div class="col">
+      
+          <div class="row">
+            <div class="col text-start mx-5 my-3">
+      
+              <img src="/Imagem/Loo-removebg-preview (1).png" width="110px" height="50px" alt="">
+            </div>
+            <div class="col text-end mx-5 my-4">
+      
+              <img src="/Icons/user.png" width="30px" height="30px" alt="">
+              <span>Dário Pimentel</span>
+            </div>
+          </div>
+      
+        </div>
+        <!-- Segunda linha -->
+        <div class="row">
+        <div class="offcanvas offcanvas-start show" tabindex="-1" data-bs-scroll="true" data-bs-backdrop="false" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="--bs-offcanvas-width:17%;">
+        <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Painel Administrativo</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+        <ul class="nav flex-column">
+          <li class="nav-item my-2">
+            <a class="nav-link active link-dark" href="#">
+            <span>
+              <img src="/Icons/home.png" alt="">
+            </span>
+            <span>Home</span>
+          </a>
+      
+          </li>
+          <li class="nav-item my-2">
+            <a class="nav-link link-dark" href="#">
+            <span>
+              <img src="/Icons/graduate.png" alt="">
+            </span>
+            <span>Aluno</span>
+          </a>
+        </li>
+        <li class="nav-item my-2">
+          <a class="nav-link link-dark" href="#">
+          <span>
+            <img src="/Icons/teacher (1).png" alt="">
+          </span>
+          <span>Professores</span>
+        </a>
+      
+        </li>
+        <li class="nav-item my-2">
+          <a class="nav-link link-dark" href="#">
+          <span>
+            <img src="/Icons/secretary.png" alt="">
+          </span>
+          <span>Secretária</span>
+        </a>
+      
+        </li>
+        <li class="nav-item my-2">
+          <a class="nav-link link-dark mt-4" href="#">
+          <span>
+            <img src="/Icons/sala-de-aula.png" alt="">
+          </span>
+          <span>Turmas</span>
+        </a>
+      
+        </li>
+        <li class="nav-item my-2">
+          <a class="nav-link link-dark" href="#">
+          <span>
+            <img src="/Icons/logout (1).png" alt="">
+          </span>
+          <span>Sair</span>
+        </a>
+      
+        </li>
+        </ul>
+        </div>
+        </div>
+      </div>
+      </div>
+   
+      <!-- Conteúdo principal -->
+      <div class="p-2 disabled"></div>
+      <div class="row container">
+        <div class="col main-content bg-danger">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        A quis debitis cumque optio ut dicta iure.
+        Distinctio maxime qui error dolore ducimus,
+        itaque, ex laudantium reprehenderit dolorem delectus doloribus. At?
+        </div>
+      </div>
+      </div>
+ 
+
+  
+<!-- Menu para Mobiles -->
+<div class="contaner-fluid d-lg-none">
+  <div class="row bg-info">
+
+    <div class="col text-start mx-3 my-2">
+      <img src="/Imagem/Loo-removebg-preview (1).png" width="50%" alt="">
+    </div>
+    
+  <div class="col text-end mx-5 my-auto">
+    <button class="navbar-toggler" type="button" id="button_mobile" onclick="abrir()">
+      <img src="/Sidbar/bootstrap-icons-1.11.2/list.svg" id="btn-exp" width="200%"alt="">
+      </button>
+  </div>
+  </div>
+  <div class="row">
+    <!-- Aqui vem o menu do mobile -->
+  <div class="col bg-danger">  
+    <div class="row">
+    <menu id="menu" class="">
+      <ul class="nav justify-content-center" >
+      
+          <li class="nav-item mx-2">
+            <a class="nav-link1 active" href="#">
+            <span>
+              <img src="/Icons/home.png" alt=""width="80%" height="80%">
+            </span>
+          </a>
+      
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link1 " href="#">
+            <span>
+              <img src="/Icons/graduate.png" alt=""width="80%" height="80%">
+            </span>
+          </a>
+              </li>
+              <li class="nav-item mx-2">
+          <a class="nav-link1" href="#">
+          <span>
+            <img src="/Icons/teacher (1).png" alt=""width="80%" height="80%">
+          </span>
+              </a>
+      
+              </li>
+              <li class="nav-item mx-2">
+          <a class="nav-link1" href="#">
+          <span>
+            <img src="/Icons/secretary.png" alt=""width="80%" height="80%">
+          </span>
+              </a>
+      
+              </li>
+              <li class="nav-item mx-2">
+          <a class="nav-link1" href="#">
+          <span>
+            <img src="/Icons/sala-de-aula.png" alt=""width="80%" height="80%">
+          </span>
+              </a>
+      
+              </li>
+              <li class="nav-item mx-2">
+          <a class="nav-link1" href="#">
+          <span>
+            <img src="/Icons/logout (1).png" alt="" width="80%" height="80%">
+          </span>
+              </a>
+      
+              </li>
+              </ul>
+    </menu>
+      </div>
+  </div>
+  <!-- <div class="col">
+    <button class="navbar-toggler" type="button" id="button_mobile" onclick="abrir()">
+      <span class=""><img src="/Icons/menu.png" alt=""></span>
+      </button>
+  </div> -->
+  </div>
+  <!-- Aqui vem o conteúdo primcipal para mobile -->
+  <div class="container bg-info mt-2">
+    
+
+  </div>
+</div>
+  
+  <!-- Links do boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    var offcanvasElement = document.getElementById('offcanvasExample');
+    var mainContentElement = document.querySelector('.main-content');
+    var navContentElement = document.querySelector('.nav-content');
+    var buttonContentElement = document.getElementById('button');
+    var buttonMobile = document.getElementById('button_mobile');
+
+    offcanvasElement.addEventListener('show.bs.offcanvas', function () {
+      mainContentElement.style.marginLeft = '11%';
+      navContentElement.style.marginLeft = '8%';
+      buttonContentElement.style.display = 'none';
+    });
+
+    offcanvasElement.addEventListener('hidden.bs.offcanvas', function () {
+      mainContentElement.style.marginLeft = '15';
+      navContentElement.style.marginLeft = '0';
+      buttonContentElement.style.display = 'block';
+    });
+// Edição do menu Haburgue para mobile
+    function abrir(){
+if( menu.style.display == 'block'){
+  menu.style.display = 'none'
+}
+else{
+  menu.style.display = 'block'
+}
+     
+    }
+  </script>
+</body>
+</html>
